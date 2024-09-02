@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Flores</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <script src="js/entrega.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Flores a domicilio</h1>
+    </header>
+    <section id="contenedor">
+        <div id="izquierda">
+            <img src="imagen/rosas_rojas.jpg" alt="" name="flores" id="flores">
+            <h2>Tu pedido</h2>
+            <p>Ramo de rosas</p>
+            <div>
+                <p>Todas nuestras flores y plantas son confeccionado en el día de la entrega.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate numquam beatae facere explicabo temporibus id quae quidem fugit dolor officiis perferendis quia repudiandae, earum facilis, officia vero consequuntur laudantium ex!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, magni. Aspernatur ipsa nesciunt voluptates nam explicabo. Excepturi reprehenderit magni itaque voluptatum consequatur veniam vero, perspiciatis, inventore dicta expedita dolorem debitis.</p>
+            </div>
+        </div>
+  
+    <form>
+        <fieldset class="ramo">
+            <legend>Ramo</legend>
+            <input type="radio" name="rosas" value="0" onclick=displayimg(this) checked>Rosas rojas
+            <input type="radio" name="rosas" value="1" onclick=displayimg(this)>Rosas rosas
+            <input type="radio" name="rosas" value="2" onclick=displayimg(this)>Rosas amarillas<br>
+            <input type="radio" name="rosas" value="3" onclick=displayimg(this)>Rosas blancas
+            <input type="radio" name="rosas" value="4" onclick=displayimg(this)>Rosas multicolor<br>
+            <label for="color">Elige el color de la tarjeta y los complementos que deseas añadir:</label><br>
+            <input type="color" name="color" id="color">
+            <input type="checkbox" name="tarjeta" id="tarjeta" checked>Tarjeta
+            <input type="checkbox" name="jarron" id="jarron">Jarrón
+            <input type="checkbox" name="cesta" id="cesta">Cesta<br>
+            <label for="dedica">Escribe tu dedicatoria:</label><br>
+            <textarea name="dedica" id="dedica"></textarea><br>
+            <label for="maximo">(Máx. 250 caracteres)</label>
+        </fieldset>
+        <div class="tusdatos">
+        <fieldset>
+            <legend>Tus datos</legend>
+            <label for="nombre">Nombre: <span>*</span> </label><br>
+            <input type="text" name="nombre" id="nombre" required><br>
+            <label for="apellido">Apellido: <span>*</span> </label><br>
+            <input type="text" name="apellido" id="apellido" required><br>
+            <label for="telf">Teléfono: <span>*</span> </label><br>
+            <input type="text" name="telf" id="telf" required>
+            <label for="email">Email: <span>*</span> </label>
+            <input type="email" name="email" id="email" placeholder="ej:nombre@tuemail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Por favor revise su e-mail, e ingrese en el formato correcto" required>
+        </fieldset>
+    </div>
+        <fieldset>
+            <legend>Entregar a</legend>
+            <label for="nombre2">Nombre: <span>*</span> </label><br>
+            <input type="text" name="nombre2" id="nombre2" required><br>
+            <label for="apellido2">Apellido: <span>*</span> </label><br>
+            <input type="text" name="apellido2" id="apellido2" required><br>
+            <label for="direc">Dirección de envío: <span>*</span> </label><br>
+            <input type="text" name="direc" id="direc" required>
+            <label for="cp">Código postal: <span>*</span> </label>
+            <input type="number" name="cp" id="cp" required>
+            <label for="pobla">Población: <span>*</span> </label>
+            <input type="text" name="pobla" id="pobla" required>
+            <label for="provincia">Provincia: <span>*</span> </label>
+            <input type="text" name="provincia" id="provincia" required>
+            <label for="fecha">Fecha:</label>
+            <input type="date" name="fecha" id="fecha" required>
+            <label for="hora">Horario de entrega:</label>
+            <select name="hora" id="hora">
+                <option value="am">Mañana</option>
+                <option value="pm">Tarde</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Pago</legend>
+            <label for="pago">Elige la forma de pago:</label>
+            <input type="radio" name="pago" id="py">Paypal
+            <input type="radio" name="pago" id="tc" checked>Tarjeta
+        </fieldset>
+        <input type="submit" value="Enviar">
+        <input type="button" value="Borrar">
+    </form>
+</section>
+    <footer>
+        <p>&copy;Realizado por Giselle.</p>
+    </footer>
+</body>
+</html>

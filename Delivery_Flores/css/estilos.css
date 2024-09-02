@@ -1,0 +1,88 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../imagen/fondo.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+header,legend{
+    font-family:Pacifico;
+    color: white;
+}
+
+legend{
+    font-size: 20px;
+}
+span{
+    color: red;
+}
+h1{
+    color: white;
+    text-align: center;
+    background:black;
+    width: 100%;
+    opacity: 0.8;
+
+}
+header{
+    border: solid 10px transparent;
+    border-image: url(../imagen/borde.jpg) 30 round;
+    display: flex;
+    justify-content:center;
+    width: 60%;
+    margin-left: 20%;
+    
+}
+#contenedor{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 700px;
+    align-items:center;
+    margin-left: 20%;
+    border: solid 10px transparent;
+    border-image: url(../imagen/borde.jpg) 30 round;
+    justify-content:center;
+    align-items: stretch;
+    align-content: center;
+}
+#izquierda{
+    background-color: white;
+    text-align: center;
+    width: 100%;
+}
+
+#izquierda p{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#flores{
+    width: 200px;
+    height: 200px;
+
+}
+form{
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+}
+
+fieldset,input,label,legend{
+    margin-left: 3%;
+}
+/* #dedica{
+    margin-left: 3%;
+    width: 90%;
+    height: 80px
+} */
+
+
+
