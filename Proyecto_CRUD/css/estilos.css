@@ -1,0 +1,15 @@
+
+
+#form_registro .label.error{
+    font-size:0.8em;
+    color:#f00;
+    font-weight:bold;
+    display:block;
+    margin-left:200px;
+}
+
+form .error {
+    color: #df1d09;
+    border: 1px dotted #df1d09;
+    margin: auto;
+  }
